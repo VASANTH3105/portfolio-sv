@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Black-Desk-Background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+
+}
+.navbar .proim{
+    align-items: center;
+    height: 60px;
+    width: 50px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    animation: rot 0.5s ease;
+}
+@keyframes rot{
+    0% { transform: rotate(0 deg);}
+    100% { transform: rotate(360 deg);}
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #00ccff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+.content img{
+    align-items: center;
+    height: 100px;
+    width: 80px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #00ccff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: url(crystalblue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+    padding-right: 10px;
+}
+button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+.svlogo{
+    height: 20px;
+    width: 15pz;
+}
+
+.myself{
+    opacity: 0.95;
+    background-image: url(blackdiamond.jpg);
+    margin-top: 30px;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    border: 3px solid #00ccff;
+    border-radius: 15px;
+    width: 50%;
+    font-size: large;
+    justify-content: center;
+    color: #def8ff;
+    text-align: center;
+    line-height: 30px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+spam{
+    
+
+    background: url(Black-Desk-Background.jpg);
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myself:hover spam{
+    width: 100%;
+    filter: blur(0px);
+}
+.myself b{
+    color: #00ccff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+.myself i{
+    color: orange;
+}
+.myself em{
+    color: greenyellow;
+}
+.myselfimg{
+    height: 450px;
+    width: 440px;
+    display: flex;
+
+}
+.parallex{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("https://wallpapercave.com/wp/wp2757874.gif");
+    /*https://wallpapercave.com/wp/wp2757874.gif*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("blacktriangle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    margin: auto;
+    max-width: 1170px;
+    
+}
+.container ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+}
+.footer-col h4:hover{
+    color: #7ae4ff;
+    text-decoration: underline;
+    padding-left: 10px;
+    font-size: 25px;
+    text-decoration-color: #ff0000;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #00ccff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+    text-decoration: underline;
+    text-decoration-color: #00ccff;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #535353;
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition:  all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #000000;
+    background-color: #00ccff;
+    margin-left: 10px;
+
+}
+.copyrights{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #bbbbbb;
+}
+.copyrights b{
+    color: #fff;
+}
+
+
+
+.containercert{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paper h1{
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+.box{
+    width: 400px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    transition: 1s;
+}
+.box img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.box:hover{
+    transform:scale(2);
+    z-index: 2;
+}
+.paper{
+    background: linear-gradient(to right, #000000,#008a05,#000000,#008504, #000000);
+    /*https://2.bp.blogspot.com/-MM4ERxB2Ffg/V_NMZrVGKhI/AAAAAAAA_9Y/iLxwyMb70b4LDYdTwX61d_cnVcmjAaM2gCLcB/s1600/1%2B%25281%2529.gif*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-bottom: 10px;
+}
+
+
+
+.containercert1{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paper1 h1{
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+.box1{
+    width: 400px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    transition: 1s;
+}
+.box1 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.box1:hover{
+    transform:scale(2);
+    z-index: 2;
+}
+.paper1{
+    background: linear-gradient(to right, #000000,#005e86,#000000,#00608a, #000000);
+    /*https://2.bp.blogspot.com/-MM4ERxB2Ffg/V_NMZrVGKhI/AAAAAAAA_9Y/iLxwyMb70b4LDYdTwX61d_cnVcmjAaM2gCLcB/s1600/1%2B%25281%2529.gif*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+
+
+
+.containercert2{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.paper2 h1{
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+.box2{
+    width: 400px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    transition: 1s;
+}
+.box2 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.box2:hover{
+    transform:scale(5);
+    z-index: 2;
+}
+.paper2{
+    background: linear-gradient(to right, #000000,#838a00,#000000,#838a00, #000000);
+    /*https://2.bp.blogspot.com/-MM4ERxB2Ffg/V_NMZrVGKhI/AAAAAAAA_9Y/iLxwyMb70b4LDYdTwX61d_cnVcmjAaM2gCLcB/s1600/1%2B%25281%2529.gif*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-bottom: 10px;
+}
+.achivements{
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+@media(max-width: 767px){
+
+}

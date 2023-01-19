@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    padding: 20px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 400px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    transition: 1s;
+}
+.box img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.box:hover{
+    transform:scale(2);
+    z-index: 2;
+}
+.paper{
+    background-image: url("goldblackbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1{
+    width: 100%;
+    padding: 20px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box1{
+    width: 400px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+    transition: 1s;
+}
+.box1 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.box1:hover{
+    transform:scale(2);
+    z-index: 2;
+}
+.paper1{
+    margin-top: 20px;
+    background-image: url("goldblackbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
